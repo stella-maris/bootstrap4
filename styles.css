@@ -32,6 +32,10 @@ body {
     color: #4c5864;
 }
 
+.filter-panel {
+    padding-left: 0px;
+}
+
 .panel.panel-default {
     background-color: #fff;
     padding: 10px 15px;
@@ -41,9 +45,10 @@ body {
     font-size: 20px;
     font-weight: 600;
 }
-
-.panel-body label {
+.panel-body, .panel-body .form-control {
     font-size: 12px;
+}
+.panel-body label {
     font-weight: 500;
 }
 
