@@ -2,6 +2,10 @@ body {
     background-color: #f2f2f4;
     color: #4c5864;
 }
+.home-container {
+    max-width: 1000px;
+}
+
 .search-row {
     padding: 15px;
     background-color: #fff;
@@ -31,4 +35,27 @@ body {
 .panel.panel-default {
     background-color: #fff;
     padding: 10px 15px;
+}
+
+.filter-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.panel-body label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.panel-body select.form-control:not([size]):not([multiple]), .panel-body input.form-control {
+    height: calc(1.25rem + 2px);
+}
+
+#projects-tab .top-row {
+    padding-bottom: 10px;
+}
+
+#projects-tab .row div {
+    padding-left: 5px;
+    padding-right: 5px;
 }

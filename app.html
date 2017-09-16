@@ -7,8 +7,10 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"> <a class="nav-link" href="#">MARKETPLACE <span class="sr-only">(current)</span></a> </li>
@@ -17,7 +19,7 @@
                 </ul>
             </div>
         </nav>
-        <div class="container">
+        <div class="container home-container">
             <div class="row search-row">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="What kind of opportunity are you looking for?">
@@ -36,13 +38,13 @@
                 <div class="col-sm-2 col-md-2">          
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Filters</h3>
+                            <div class="panel-title filter-title">Filters</div>
                             <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
                         </div>
                         <div class="panel-body">
                             <div class="form-group">
-                                <label for="exampleSelect1">Show Me</label>
-                                <select class="form-control" id="exampleSelect1">
+                                <label for="showMe">Show Me</label>
+                                <select class="form-control" id="showMe">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -51,8 +53,8 @@
                                 </select>
                             </div> 
                             <div class="form-group">
-                                <label for="exampleSelect1">Category</label>
-                                <select class="form-control" id="exampleSelect1">
+                                <label for="category">Category</label>
+                                <select class="form-control" id="category">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -61,8 +63,8 @@
                                 </select>
                             </div> 
                             <div class="form-group">
-                                <label for="exampleSelect1">Project Type</label>
-                                <select class="form-control" id="exampleSelect1">
+                                <label for="project">Project Type</label>
+                                <select class="form-control" id="project">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -71,11 +73,11 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                               <label for="exampleSelect1">Location</label>
+                               <label for="location-filter">Location</label>
                                 <input type="text" class="form-control" placeholder="Enter location" aria-describedby="sizing-addon2">
                             </div>
                             <div class="form-check">
-                                <label for="exampleSelect1">Staffing Need</label>
+                                <label>Staffing Need</label>
                                 <label class="form-check-label">
                                     <input type="checkbox" class="form-check-input"> On site</label>
                             </div>
@@ -84,8 +86,8 @@
                                     <input type="checkbox" class="form-check-input"> Remote</label>
                             </div>
                             <div class="form-group">
-                                <label for="exampleSelect1">Hours per week</label>
-                                <select class="form-control" id="exampleSelect1">
+                                <label for="hoursFilter">Hours per week</label>
+                                <select class="form-control" id="hoursFilter">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -99,45 +101,89 @@
                 </div>
                 
                 <div class="col-sm-10 col-md-10" id="projects-tab">
-                    <div class="col-sm-3">
-                        <div class="card">
-                          <img class="card-img-top" src="..." alt="Card image cap">
-                          <div class="card-block">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                          </div>
+                    <div class="row top-row">
+                        <div class="col-sm-3">
+                            <div class="card">
+                              <img class="card-img-top" src="..." alt="Card image cap">
+                              <div class="card-block">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            </div>
                         </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                              <img class="card-img-top" src="..." alt="Card image cap">
+                              <div class="card-block">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                              <img class="card-img-top" src="..." alt="Card image cap">
+                              <div class="card-block">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                              <img class="card-img-top" src="..." alt="Card image cap">
+                              <div class="card-block">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            </div>
+                        </div>    
                     </div>
-                    <div class="col-sm-3">
-                        <div class="card">
-                          <img class="card-img-top" src="..." alt="Card image cap">
-                          <div class="card-block">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                          </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="card">
+                              <img class="card-img-top" src="..." alt="Card image cap">
+                              <div class="card-block">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card">
-                          <img class="card-img-top" src="..." alt="Card image cap">
-                          <div class="card-block">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                          </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                              <img class="card-img-top" src="..." alt="Card image cap">
+                              <div class="card-block">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card">
-                          <img class="card-img-top" src="..." alt="Card image cap">
-                          <div class="card-block">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                          </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                              <img class="card-img-top" src="..." alt="Card image cap">
+                              <div class="card-block">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            </div>
                         </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                              <img class="card-img-top" src="..." alt="Card image cap">
+                              <div class="card-block">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                              </div>
+                            </div>
+                        </div>    
                     </div>
                 </div>
             </div>
