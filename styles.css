@@ -28,6 +28,10 @@ body {
     color: white;
 }
 
+.search-btn:hover {
+    background-color: #008567;
+}
+
 .no-padding {
     padding-left: 0px;
     padding-right: 0px;
@@ -94,6 +98,11 @@ body {
 .panel-body .filter-btn button {
     background-color: #fff;
     color: #4c5864;
+}
+
+.panel-body .filter-btn button:hover, .panel-body .filter-btn button:active {
+    color: #fff;
+    background-color: #4c5864;
 }
 
 #projects-tab .top-row {
