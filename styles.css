@@ -49,6 +49,7 @@ body {
 }
 .nav-pills a {
     color: #4c5864;
+    text-decoration: none;
 }
 
 .main-row {
